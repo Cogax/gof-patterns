@@ -12,8 +12,8 @@
       "phpunit/phpunit": "4.5.*"
     },
     "autoload": {
-      "classmap": [
-        "patterns/"
-      ]
+      "psr-4": {
+        "patterns\\": "patterns/"
+      }
     }
 }
