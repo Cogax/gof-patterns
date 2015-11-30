@@ -10,8 +10,8 @@
          stopOnFailure="false"
          syntaxCheck="false">
     <testsuites>
-        <testsuite name="abstract_factory">
-            <directory>patterns/abstract_factory/tests</directory>
+        <testsuite name="PHP GOF Patterns Test Suite">
+            <directory>./src/*/Tests/</directory>
         </testsuite>
     </testsuites>
 </phpunit>

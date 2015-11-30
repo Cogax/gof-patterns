@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: andy
- * Date: 01/04/15
- * Time: 20:04
- */
 
-namespace patterns\abstract_factory\src;
+namespace AbstractFactory\Basic;
 
 class ConcreteFactory2 extends AbstractFactory  {
 

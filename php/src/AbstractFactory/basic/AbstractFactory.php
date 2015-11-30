@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: andy
- * Date: 31/03/15
- * Time: 22:52
- */
 
-namespace patterns\abstract_factory\src;
+namespace AbstractFactory\Basic;
 
 abstract class AbstractFactory {
   abstract function createProductA();

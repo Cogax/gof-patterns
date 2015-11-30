@@ -1,19 +1,19 @@
 {
-    "name": "gof-patterns/php",
-    "description": "GoF Patterns written in PHP",
-    "authors": [
-        {
-            "name": "Andreas Gyr",
-            "email": "andygyr@gmx.ch"
-        }
-    ],
-    "require": {},
-    "require-dev": {
-      "phpunit/phpunit": "4.5.*"
-    },
-    "autoload": {
-      "psr-4": {
-        "patterns\\": "patterns/"
-      }
+  "name": "gof-patterns/php",
+  "description": "GoF Patterns written in PHP",
+  "authors": [
+    {
+      "name": "Andreas Gyr",
+      "email": "andygyr@gmx.ch"
     }
+  ],
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "4.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "AbstractFactory\\": "src/AbstractFactory/"
+    }
+  }
 }
