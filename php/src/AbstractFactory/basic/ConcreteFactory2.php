@@ -5,10 +5,10 @@ namespace AbstractFactory\Basic;
 class ConcreteFactory2 extends AbstractFactory  {
 
   function createProductA() {
-    return new AbstractProductA2();
+    return new ProductA2();
   }
 
   function createProductB() {
-    return new AbstractProductB2();
+    return new ProductB2();
   }
 }
