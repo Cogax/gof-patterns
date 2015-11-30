@@ -1,0 +1,9 @@
+<NUnitProject>
+  <Settings activeconfig="Debug"/>
+  <Config name="Debug">
+    <assembly path="Builder\bin\Debug\Builder.dll"/>
+  </Config>
+  <Config name="Release">
+    <assembly path="Builder\bin\Release\Builder.dll"/>
+  </Config>
+</NUnitProject>

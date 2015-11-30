@@ -4,13 +4,12 @@ using NUnit.Framework;
 namespace Builder.Tests.Basic
 {
 	[TestFixture]
-	public class BuilderTest
+	public class BasicTest
 	{
 		[Test]
 		public void TestBuilder()
 		{
-			IBuilder builder = new ConcreteBuilder();
-			Director director = new Director(builder);
+			Director director = new Director();
 			Assert.IsInstanceOf(typeof(Product), director.Construct());
 		}
 	}

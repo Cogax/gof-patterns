@@ -2,16 +2,11 @@
 {
 	public class ConcreteBuilder : IBuilder
 	{
-		private readonly Product _product; 
-
-		public ConcreteBuilder()
-		{
-			_product = new Product();
-		}
+		private Product _product;
 
 		public void BuildPart()
 		{
-			// configure product
+			_product = new Product();
 		}
 
 		public Product GetResult()
