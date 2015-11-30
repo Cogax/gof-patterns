@@ -1,4 +1,7 @@
 # PHP GOF-Patterns
 An implementation of a few design patterns in PHP.
 
-Call `phpunit` to run tests.
+## Installation
+This is a composer project.
+  * Install dependencies: `composer install`
+  * Run tests: `phpunit`
