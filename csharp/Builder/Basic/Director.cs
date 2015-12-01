@@ -2,11 +2,17 @@
 {
 	public class Director
 	{
+		private readonly IBuilder _builder;
+
+		public Director(IBuilder builder)
+		{
+			_builder = builder;
+		}
+
 		public Product Construct()
 		{
-			ConcreteBuilder builder = new ConcreteBuilder();
-			builder.BuildPart();
-			return builder.GetResult();
+			_builder.BuildPart();
+			return _builder.GetResult();
 		}
 	}
 }

@@ -9,7 +9,8 @@ namespace Builder.Tests.Basic
 		[Test]
 		public void TestBuilder()
 		{
-			Director director = new Director();
+			ConcreteBuilder builder = new ConcreteBuilder();
+			Director director = new Director(builder);
 			Assert.IsInstanceOf(typeof(Product), director.Construct());
 		}
 	}
