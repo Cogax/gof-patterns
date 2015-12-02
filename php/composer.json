@@ -13,7 +13,8 @@
   },
   "autoload": {
     "psr-4": {
-      "AbstractFactory\\": "src/AbstractFactory/"
+      "AbstractFactory\\": "src/AbstractFactory/",
+      "Singleton\\": "src/Singleton/"
     }
   }
 }
