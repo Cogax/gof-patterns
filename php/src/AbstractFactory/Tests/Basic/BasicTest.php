@@ -6,7 +6,7 @@ use AbstractFactory\Basic\ConcreteFactory1;
 use AbstractFactory\Basic\ConcreteFactory2;
 use PHPUnit_Framework_TestCase;
 
-class AbstractFactoryTest extends PHPUnit_Framework_TestCase {
+class BasicTest extends PHPUnit_Framework_TestCase {
 
   public function testInstanceOfProductA1() {
     $factory1 = new ConcreteFactory1();
