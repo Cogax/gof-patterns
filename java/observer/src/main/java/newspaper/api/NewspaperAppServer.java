@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class NewspaperAppServer {
-    List<NewspaperAppClient> clients = new ArrayList<NewspaperAppClient>();
+    private List<NewspaperAppClient> clients = new ArrayList<NewspaperAppClient>();
 
     public void registerClient(NewspaperAppClient client) {
         clients.add(client);
@@ -12,6 +12,10 @@ public abstract class NewspaperAppServer {
 
     public void unregisterClient(NewspaperAppClient client) {
         clients.remove(client);
+    }
+
+    public int countClients() {
+        return clients.size();
     }
 
     public void notifyAllCLients() {
