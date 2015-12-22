@@ -7,14 +7,17 @@
       "email": "andygyr@gmx.ch"
     }
   ],
-  "require": {},
+  "require": {
+    "symfony/http-kernel": "^3.0"
+  },
   "require-dev": {
     "phpunit/phpunit": "4.5.*"
   },
   "autoload": {
     "psr-4": {
       "AbstractFactory\\": "src/AbstractFactory/",
-      "Singleton\\": "src/Singleton/"
+      "Singleton\\": "src/Singleton/",
+      "Decorator\\": "src/Decorator/"
     }
   }
 }
