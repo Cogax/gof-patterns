@@ -10,6 +10,6 @@ class ConcreteDecoratorB extends Decorator {
 
   public function operation() {
     echo 'concrete decorator B; ';
-    $this->component->operation();
+    return $this->component->operation();
   }
 }
