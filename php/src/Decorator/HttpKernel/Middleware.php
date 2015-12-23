@@ -19,6 +19,10 @@ abstract class Middleware implements HttpKernelInterface {
    */
   protected $httpKernel;
 
+  /**
+   * Middleware constructor.
+   * @param \Symfony\Component\HttpKernel\HttpKernelInterface $httpKernel
+   */
   public function __construct(HttpKernelInterface $httpKernel) {
     $this->httpKernel = $httpKernel;
   }
@@ -27,6 +31,6 @@ abstract class Middleware implements HttpKernelInterface {
    * @inheritdoc
    */
   public function handle(Request $request, $type = self::MASTER_REQUEST, $catch = TRUE) {
-    $this->httpKernel->handle($request, $type, $catch);
+    return $this->httpKernel->handle($request, $type, $catch);
   }
 }

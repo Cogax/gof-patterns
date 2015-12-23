@@ -9,17 +9,16 @@ use PHPUnit_Framework_TestCase;
 
 class BasicTest extends PHPUnit_Framework_TestCase {
 
-  public function testDecorator() {
+  public function testDecorateComponent() {
     ob_start();
 
     $component = new ConcreteComponent();
-    $decoratorA = new ConcreteDecoratorA($component);
-    $decoratorA->operation();
     $decoratorB = new ConcreteDecoratorB($component);
-    $decoratorB->operation();
+    $decoratorA = new ConcreteDecoratorA($decoratorB);
+    $decoratorA->operation();
 
     $content = ob_get_clean();
 
-    $this->assertEquals("concrete decorator A; conrete component; concrete decorator B; conrete component; ", $content);
+    $this->assertEquals("concrete decorator A; concrete decorator B; conrete component; ", $content);
   }
 }
