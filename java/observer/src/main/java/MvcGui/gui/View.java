@@ -24,4 +24,8 @@ public class View extends JFrame implements Observer {
     public void update(Observable model, Object arg) {
         button.setText(new Integer(((Model) model).getValue()).toString());
     }
+
+    public JButton getButton() {
+        return button;
+    }
 }
