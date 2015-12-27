@@ -39,7 +39,7 @@ public class NewspaperAppTest {
         server.registerClient(iOSClient);
 
         server.notifyAllCLients();
-        assertEquals("This is a android notification from new york times!\r\nThis is a iOS notification from new york times!", outputStream.toString().trim());
+        assertEquals("This is a android notification from new york times!This is a iOS notification from new york times!", outputStream.toString().trim().replace("\r", "").replace("\n", ""));
     }
 
     @Test
@@ -52,7 +52,7 @@ public class NewspaperAppTest {
         server.registerClient(iOSClient);
 
         server.notifyAllCLients();
-        assertEquals("This is a android notification from nzz!\r\nThis is a iOS notification from nzz!", outputStream.toString().trim());
+        assertEquals("This is a android notification from nzz!This is a iOS notification from nzz!", outputStream.toString().trim().replace("\r", "").replace("\n", ""));
     }
 
     @Test
