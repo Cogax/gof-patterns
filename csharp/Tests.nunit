@@ -2,8 +2,10 @@
   <Settings activeconfig="Debug"/>
   <Config name="Debug">
     <assembly path="Builder\bin\Debug\Builder.dll"/>
+    <assembly path="State\bin\Debug\State.exe"/>
   </Config>
   <Config name="Release">
     <assembly path="Builder\bin\Release\Builder.dll"/>
+    <assembly path="State\bin\Release\State.exe"/>
   </Config>
 </NUnitProject>
