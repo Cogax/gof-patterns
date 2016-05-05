@@ -47,7 +47,6 @@
     <Compile Include="Basic\Director.cs" />
     <Compile Include="Basic\IBuilder.cs" />
     <Compile Include="Basic\Product.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restaurant\IMealBuilder.cs" />
     <Compile Include="Restaurant\IndianMealBuilder.cs" />
